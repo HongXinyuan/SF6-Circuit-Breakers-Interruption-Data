@@ -5,7 +5,7 @@ Electrode erosion caused by switching arcs is a key factor limiting electrical l
 This dataset supports a coupled MHD–turbulence–phase-change study and experimental validation on a **252 kV self-blast SF6 circuit breaker**.
 
 ## Contents
-- `data.csv/raw/`: raw measurements and exported data (Data of dravel curve)
+- `data.csv/raw/`: raw measurements and exported data (Travel)
 - `data/processed/`: pictures and records during the experiment process (Pictures)
 - `data/data_dictionary.scm`: variable names, units, descriptions (Materials)
 - `scripts/`: preprocessing and analysis scripts (Fitting)
