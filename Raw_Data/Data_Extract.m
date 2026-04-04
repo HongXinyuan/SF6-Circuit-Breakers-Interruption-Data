@@ -1,5 +1,5 @@
 % Read the Excel file 
-file_path = 'C:\Users\Admin\Desktop\Data of dravel curve_Origin_Data.xlsx';
+file_path = 'xxx.xlsx';
 data = readtable(file_path);
 
 % Get the size of the data
@@ -41,7 +41,7 @@ for col = 1:num_cols
 end
 
 % Save as a new Excel file
-output_file = 'C:\Users\Admin\Desktop\Data of dravel curve_Origin_Data_2.xlsx';
+output_file = 'yyy.xlsx';
 writetable(avg_table, output_file);
 
 % Display the results
