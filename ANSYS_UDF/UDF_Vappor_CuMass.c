@@ -342,7 +342,7 @@ DEFINE_EXECUTE_AT_END(CU_generate)
     Thread* t, * t1;
     face_t f;
     Domain* domain = Get_Domain(1);  
-    int zone_ID = 47;  
+    int zone_ID = ***;  // Based on your settings in ANSYS  
     real Enrg_Source = 0;
 
     t = Lookup_Thread(domain, zone_ID);  
