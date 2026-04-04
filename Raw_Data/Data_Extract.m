@@ -6,7 +6,7 @@ data = readtable(file_path);
 [num_rows, num_cols] = size(data);
 
 % Set the number of rows per group
-group_size = 2;
+group_size = 50;
 
 % Calculate the number of groups needed
 num_groups = ceil(num_rows / group_size);
