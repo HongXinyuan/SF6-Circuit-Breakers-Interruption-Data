@@ -19,9 +19,9 @@ DEFINE_SOURCE(mass_vx_source, c, t, dS, eqn)
     real omiga = (pvap * M_Cu) / (pvap * M_Cu + (1.0 - pvap) * 0.14606);  
     real b = RP_Get_Real("flow-time");  
 
-    if (b <= 0.000125)
+    if (b <= ***)      // The arc ignition time needs to be adjusted according to your settings in ANSYS
     {
-        source = 0.0;  // If time is less than 0.000125, source term is 0, this is a current-zero time
+        source = 0.0;  // If time is less than ***, source term is 0, this is a current-zero time
     }
     else {
         // Check if a point is in the top ablation region
@@ -85,7 +85,7 @@ DEFINE_SOURCE(mass_vy_source, c, t, dS, eqn)
     real omiga = (pvap * M_Cu) / (pvap * M_Cu + (1.0 - pvap) * 0.14606);  
     real b = RP_Get_Real("flow-time"); 
 
-    if (b <= 0.000125)
+    if (b <= ***)  // The arc ignition time needs to be adjusted according to your settings in ANSYS
     {
         source = 0.0;  
     }
@@ -151,7 +151,7 @@ DEFINE_SOURCE(mass_vz_source, c, t, dS, eqn)
     real omiga = (pvap * M_Cu) / (pvap * M_Cu + (1.0 - pvap) * 0.14606); 
     real b = RP_Get_Real("flow-time");  // Get current flow time
 
-    if (b <= 0.000125)
+    if (b <= ***)  // The arc ignition time needs to be adjusted according to your settings in ANSYS
     {
         source = 0.0; 
     }
@@ -216,7 +216,7 @@ DEFINE_SOURCE(mass1, c, t, dS, eqn)
     real omiga = (pvap * M_Cu) / (pvap * M_Cu + (1.0 - pvap) * 0.14606);  
     real b = RP_Get_Real("flow-time");  
 
-    if (b <= 0.000125)
+    if (b <= ***)  // The arc ignition time needs to be adjusted according to your settings in ANSYS
     {
         source = 0.0;  
         C_UDMI(c, t, 31) = 0.0;  
@@ -289,7 +289,7 @@ DEFINE_PROFILE(mass_change, thread, position)
 
     t0 = THREAD_T0(thread); 
 
-    if (b <= 0.000125)
+    if (b <= ***)  // The arc ignition time needs to be adjusted according to your settings in ANSYS.
     {
         begin_f_loop(f, thread)
         {
